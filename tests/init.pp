@@ -1,0 +1,1 @@
+class { 'cups_sane': }
