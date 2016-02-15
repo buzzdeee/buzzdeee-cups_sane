@@ -11,6 +11,10 @@ class cups_sane::params {
       $packages = [ 'cups', 'cups-libs', 'cups-client', ]
       $service_provider = 'systemd'
     }
+    'Debian': {
+      $packages = [ 'cups', 'sane', ]
+      $service_provider = undef
+    }
   }
 
   $packages_ensure = 'installed'
