@@ -13,7 +13,7 @@ class cups_sane::params {
     }
     'Debian': {
       $packages = [ 'cups', 'sane', ]
-      $service_provider = undef
+      $service_provider = 'systemd'
     }
   }
 
